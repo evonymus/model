@@ -2,13 +2,12 @@
   {{title}}
 </h2>
 <div class="container">
-  <div class="row">
-    <div class="bg-info"><app-header></app-header></div>
+  <div class="row" (click)="onClick()">
+    <div class="bg-info"><app-header [message]="title"></app-header></div>
   </div>
   <div class="row">
-    <div class="col-lg-4"><app-sidebar></app-sidebar></div>
+    <div class="col-lg-4"><app-sidebar [persons]="persons"></app-sidebar></div>
     <div class="col-lg-8"><app-content></app-content></div>
-
   </div>
 
 </div>

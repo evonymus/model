@@ -2,12 +2,15 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  inputs: ['name:Marek', 'isEnabled'],
+  templateUrl: './content.component.html'
 })
 export class ContentComponent implements OnInit {
+  name: string;
+  isEnabled: boolean;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
