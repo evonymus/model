@@ -12,8 +12,8 @@ import {MenuService} from '../services/menu.service';
   providers: [MenuService]
 })
 export class SidebarComponent implements OnInit {
-  menu: MenuItem[] = [];
-  persons: Person[] = [] ;
+  menu: MenuItem[] ;
+  persons: Person[] ;
   selectedPerson: Person;
 
   constructor(menuService: MenuService) {

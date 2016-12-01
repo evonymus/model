@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import {PersonComponent} from './components/person/person.component';
+import { PersonListComponent } from './components/personList/personList.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {PersonComponent} from './components/person/person.component';
     HeaderComponent,
     SidebarComponent,
     ContentComponent,
-    PersonComponent
+    PersonComponent,
+    PersonListComponent
   ],
   imports: [
     BrowserModule,
@@ -26,3 +28,4 @@ import {PersonComponent} from './components/person/person.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
